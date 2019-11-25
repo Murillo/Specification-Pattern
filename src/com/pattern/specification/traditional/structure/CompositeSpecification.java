@@ -1,4 +1,4 @@
-package com.pattern.specification.structure;
+package com.pattern.specification.traditional.structure;
 
 public abstract class CompositeSpecification<T> implements Specification<T> {
 

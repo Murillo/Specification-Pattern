@@ -1,4 +1,4 @@
-package com.pattern.specification.structure;
+package com.pattern.specification.traditional.structure;
 
 public interface Specification<T> {
     Boolean isSatisfiedBy(T t);

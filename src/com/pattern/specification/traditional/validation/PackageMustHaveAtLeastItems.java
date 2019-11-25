@@ -1,7 +1,7 @@
-package com.pattern.specification.validation;
+package com.pattern.specification.traditional.validation;
 
 import com.pattern.specification.Shipment;
-import com.pattern.specification.structure.CompositeSpecification;
+import com.pattern.specification.traditional.structure.CompositeSpecification;
 
 public class PackageMustHaveAtLeastItems extends CompositeSpecification<Shipment> {
 
