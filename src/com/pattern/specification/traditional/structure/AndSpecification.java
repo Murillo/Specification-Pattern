@@ -1,4 +1,4 @@
-package com.pattern.specification.structure;
+package com.pattern.specification.traditional.structure;
 
 public class AndSpecification<T> extends CompositeSpecification<T> {
     private Specification<T> leftRule;
