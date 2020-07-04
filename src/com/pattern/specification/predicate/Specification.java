@@ -7,21 +7,21 @@ public class Specification<E> {
     private Predicate<E> rules;
 
     public Specification(){
-        rules = (r) -> 1 == 1;
+        rules = (r) -> true;
     }
 
     public Specification<E> and(Predicate<E> rule) {
-        rules.and(rule);
+        rules = rules.and(rule);
         return this;
     }
 
     public Specification<E> or(Predicate<E> rule) {
-        rules.or(rule);
+        rules = rules.or(rule);
         return this;
     }
 
     public Specification<E> not(Predicate<E> rule) {
-        rules.and(rule).negate();
+        rules = rules.and(rule).negate();
         return this;
     }
 
